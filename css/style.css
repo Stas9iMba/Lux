@@ -148,8 +148,9 @@ body {
   text-transform: uppercase;
   background: #c5ac2d;
   color: #fefefe;
-  border: 1px solid inherit;
+  border: 1px solid transparent;
   transition: all 0.5s;
+  display: inline-block;
 }
 .application-btn:hover {
   color: #c5ac2d;
@@ -218,7 +219,7 @@ body {
   width: 150px;
   height: 150px;
   padding: 10px;
-  border: 1px solid #1b1818;
+  border: 1px solid transparent;
   text-align: center;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -252,12 +253,8 @@ body {
 }
 .rent__content {
   width: 300px;
-  position: relative;
 }
-.rent-btn {
-  position: absolute;
-  bottom: 0;
-}
+
 
 .rent__title {
   margin-bottom: 30px;
@@ -372,8 +369,10 @@ body {
   text-transform: uppercase;
   background-color: #c5ac2d;
   color: #fefefe;
-  border: 1px solid inherit;
-  transition: all 0.5s;
+  transition: all .4s;
+}
+.video-popup:hover {
+  background-color: #332208
 }
 .video-popup::before {
   content: '';
@@ -433,4 +432,85 @@ body {
   align-items: center;
 }
 .reviews__item-text {
+}
+
+.feedback {
+  padding: 100px 0;
+}
+.feedback__inner {
+  display: flex;
+  align-items: center;
+}
+.feedback__images {
+  width: 50%;
+}
+.feedback__form {
+  width: 460px;
+  margin: 0 auto;
+}
+.feedback__title {
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+}
+.feedback__text {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+.feedback__input {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 19px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding-left: 15px;
+
+}
+.feedback__input::placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+.feedback__btn {
+  margin-top: 50px;
+  padding: 16px 36px 15px;
+  text-transform: uppercase;
+  background: #c5ac2d;
+  color: #fefefe;
+  border: none;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+.feedback__btn:hover {
+  color: #c5ac2d;
+  background: #fefefe;
+  border: 1px solid #c5ac2d;
+}
+
+.footer{
+  padding: 100px 0 24px;
+  background-color:#332208;
+
+}
+.footer__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.footer__social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social-link{
+margin: 0 15px;
 }
